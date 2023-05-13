@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica;
+}
+
+nav{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 80px;
+    background-color: rgb(8, 39, 141);
+}
+
+nav .logo{
+    float: left;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+nav .list{
+    float: center;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .list li{
+    list-style: none;
+}
+
+nav .list a{
+    display: block;
+    text-transform: uppercase;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+#toggle{
+    position: relative;
+    top: -100px;
+}
+
+nav .icon-bars{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+nav .icon-bars .line{
+    width: 30px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+@media (max-widht:768px) {
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: left;
+    }
+    nav .list{
+        float: center;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+}
+
+    nav .list a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .list{
+        bottom: 0;
+    }
+
+    nav .icon-bars{
+        display: block;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("votacionescorruptas.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background:#ffffff;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+form .title{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800px;
+    margin-bottom: 10px;
+}
+
+form label{
+    margin-bottom: 35px;
+}
+
+form label  input{
+    outline: none;
+    border: none;
+    color: #0c0c0d;
+    border-bottom: solid 1px;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form label inpuit::placeholder{
+    color: #252525;
+}
+
+form .link{
+    color:#252525;
+    margin-bottom: 5px;
+}
+
+form p {
+    padding: 20px 20px;
+}
+
+form .link2 {
+    color: #252525;
+    padding: 15px;
+    margin: 0;
+}
+
+form button{
+    color: #ffffff;
+    border: none;
+    background: #011586;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
