@@ -1,0 +1,86 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOC-CrearElección</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\ignac\OneDrive\Documentos\EVOC\EVOC Images\Opera-Instantánea_2023-05-31_184938_drive.google.com.svg">
+    <link rel="stylesheet" href="StyleCrearEventoEvoc.css">
+</head>
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <img src = "C:\Users\ignac\OneDrive\Documentos\EVOC\EVOC Images\Opera-Instantánea_2023-05-31_184938_drive.google.com.svg" width="10%" height="20%">
+        </div>
+
+    </nav>
+
+    <form action="">
+
+        <h1 class="title">Crear Elección</h1>
+        <label class="titulo">
+            <input placeholder="Nombre de la elección" type="text" id="nombre">
+        </label>
+
+        <div class="title1">
+            <h4>Fecha inicial de la elección:</h4>
+        </div>
+
+        <label class="fecha">
+            <input placeholder="D/M/Y" type="datetime-local" id="fecha">
+        </label>
+        </div>
+
+        <div class="title2">
+            <h4>Fecha final de la Eleccion:</h4>
+        </div>
+
+        <div>
+            <label class="fecha2">
+                <input placeholder="D/M/Y" type="datetime-local" id="fecha2">
+            </label>
+
+            <div class="title4">
+                <h4>Tipo de eleccion:</h4>
+            </div>
+
+        <div class="seleccion">
+            <label class="tipo-Eleccion" for="tipo"></label>
+            <select name="Tipo_Eleccion" id="eleccion-list">
+            <option value="consejal">Eleccion de consejal</option>
+            <option value="alcalde">Eleccion de Alcaldía</option>
+            <option value="gobernador">Eleccion de Gobernación</option>
+            <option value="presidente">Eleccion de Presidencia</option>
+            <option value="administrador">Eleccion de Administracion Local</option>
+            </select>
+        </div>  
+
+        <div class="title4">
+            <h4>Estado de eleccion:</h4>
+        </div>
+
+        <div class="seleccion2">
+            <label class="tipo-Eleccion2" for="tipo2"></label>
+            <select name="Tipo_Eleccion2" id="tipoEleccion-list">
+            <option value="Eleccion abierta">Abierta</option>
+            <option value="Eleccion cerrada">Cerrada</option>
+            </select>
+
+        <div class="button">
+        <button id="button" type="button">Cancelar</button>
+        </div>
+
+        <div class="button2">
+        <button  id="button2" type="submit">Completar</button>
+        </div>
+
+
+
+    </form>
+    <script src="CrearEvento.js"></script>
+</body>
+</html>

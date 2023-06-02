@@ -1,0 +1,85 @@
+body {
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: #ffffff;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 15%;
+    height: 20%;
+  }
+
+  form {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  .titulo input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .title1 h4,
+  .title2 h4,
+  .title4 h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .fecha input,
+  .fecha2 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .seleccion {
+    margin-bottom: 20px;
+  }
+
+  .tipo-Eleccion {
+    font-size: 16px;
+  }
+
+  .seleccion2 {
+    margin-bottom: 20px;
+  }
+
+  .tipo-Eleccion2 {
+    font-size: 16px;
+  }
+
+  .button,
+  .button2 {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #333333;
+  }
