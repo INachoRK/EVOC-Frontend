@@ -1,0 +1,25 @@
+.container {
+    margin: 20px;
+  }
+
+  .candidato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .candidato img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .candidato div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, p, label {
+    margin: 5px 0;
+  }
+

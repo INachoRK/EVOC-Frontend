@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agregar candidato</title>
+  <style>
+    .container {
+      margin: 20px;
+    }
+    .candidato {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .candidato img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  </style>
+  <script>
+    function agregarCandidato() {
+      var nombre = document.getElementById("nombre").value;
+      var imagen = document.getElementById("imagen").value;
+      var edad = document.getElementById("edad").value;
+      var partido = document.getElementById("partido").value;
+
+      var nuevoCandidato = "<div class='candidato'>";
+      nuevoCandidato += "<img src='" + imagen + "' alt='Imagen del candidato'>";
+      nuevoCandidato += "<div>";
+      nuevoCandidato += "<h3>" + nombre + "</h3>";
+      nuevoCandidato += "<p>Edad: " + edad + "</p>";
+      nuevoCandidato += "<p>Partido: " + partido + "</p>";
+      nuevoCandidato += "</div>";
+      nuevoCandidato += "</div>";
+
+      document.getElementById("candidatos").innerHTML += nuevoCandidato;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Agregar candidato</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <label for="imagen">URL de la imagen:</label>
+    <input type="text" id="imagen">
+    <label for="edad">Edad:</label>
+    <input type="text" id="edad">
+    <label for="partido">Partido:</label>
+    <input type="text" id="partido">
+    <button onclick="agregarCandidato()">Agregar</button>
+
+    <h2>Candidatos:</h2>
+    <div id="candidatos"></div>
+  </div>
+</body>
+</html>
