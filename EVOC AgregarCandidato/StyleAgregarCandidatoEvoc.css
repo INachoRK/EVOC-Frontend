@@ -1,25 +1,28 @@
-.container {
-    margin: 20px;
-  }
+.form-container {
+  margin: 20px;
+}
+.form-container label,
+.form-container input[type="text"],
+.form-container input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-container button {
+  margin-top: 10px;
+  background-color: #87CEEB; /* Color azul claro */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
 
-  .candidato {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .candidato img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-  }
-
-  .candidato div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  h1, h2, h3, p, label {
-    margin: 5px 0;
-  }
-
+.candidato {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.candidato img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
