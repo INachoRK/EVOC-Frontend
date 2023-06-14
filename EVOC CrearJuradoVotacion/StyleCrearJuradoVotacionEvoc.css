@@ -1,0 +1,54 @@
+body {
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.form-container label,
+.form-container input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-container button {
+  background-color: deepskyblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#jurados-container {
+  margin-top: 20px;
+}
+
+#jurados-container h2 {
+  margin-bottom: 10px;
+}
+
+#jurados-container ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#jurados-container li {
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
